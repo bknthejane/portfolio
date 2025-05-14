@@ -3,15 +3,15 @@
 
 <head>
     <title>Bonolo Nthejane - Bio</title>
-    <link href="./styles.css" type="stylesheet">
+    <link href="./styles.css" rel="stylesheet">
 </head>
 
 <body>
     <header>
         <div class="container">
-            <h1 style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: cneter;">Bonolo Khotso Nthejane</h1>
+            <h1>Bonolo Khotso Nthejane</h1>
 
-            <nav style="display: block;">
+            <nav>
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#about">About</a></li>
@@ -23,20 +23,23 @@
         </div>
     </header>
 
-    <main style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
-        <section class="about" style="display: flex; ailgn-items: center; gap: 2rem; padding: 4rem 0; border-bottom: 2px dotted red;">
-            <img src="./MyImage.jpg" width="300" height="300">
+    <main>
+        <section class="about">
+            <figure>
+                <img src="./MyImage.jpg" alt="Bonolo Nthejane profile picture">
+                <figcaption><strong>Fig.1</strong> A picture of Bonolo Nthejane</figcaption>
+            </figure>
 
-            <div id="about">
+            <article>
                 <h2>About Me</h2>
                 <p>Graduate Software Engineer with a drive to learning new things, receiving constructive critisim</p>
-            </div>
+            </article>
         </section>
 
-        <section class="skills" style="padding: 4rem 0; border-bottom: 2px dotted red;">
+        <section class="skills">
             <div id="skills">
-                <h2 style="color: blue;">Skills</h2>
-                <ul style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                <h2>Skills</h2>
+                <ul>
                     <li>C#</li>
                     <li>JavaScript</li>
                     <li>HTML</li>
@@ -45,41 +48,51 @@
             </div>
         </section>
 
-        <section class="projects" style="padding: 4rem 0; border-bottom: 2px dotted red;">
-            <div id="projects">
-                <h2 style="color: blue;">Projects</h2>
-                <h3>Personal Blog</h3>
-                <p>A responsive blog built with HTML and deployed on GitHub Pages</p>
-                <a href="#">View Project</a>
+        <section class="projects">
+            <h2>Projects</h2>
+            <div>
 
-                <h3>Portfolio Site</h3>
-                <p>A personal portfolio showcasing my web development projects</p>
-                <a href="#">View Project</a>
+                <article>
+                    <h3>Personal Blog</h3>
+                    <p>A responsive blog built with HTML and deployed on GitHub Pages</p>
+                    <a href="#">View Project</a>
+                </article>
+
+                <article>
+                    <h3>Portfolio Site</h3>
+                    <p>A personal portfolio showcasing my web development projects</p>
+                    <a href="#">View Project</a>
+                </article>
             </div>
         </section>
 
-        <section class="contact" style="padding: 4rem 0; border-bottom: 2px dotted red;">
-            <div id="contact">
-            <h2 style="color: blue;">Contact Me</h2>
-            <label>Name</label>
-            <input type="textarea" value="Your name"><br><br>
-            <label>Email</label>
-            <input type="textarea" value="your.email@example.com"><br><br>
-            <label>Message</label>
-            <textarea rows="10" cols="20">Type a Message...</textarea><br><br>
-            <input type="submit" vakue="Submit"><br>
-        </div>
+        <section class="contact">
+            <h2>Contact Me</h2>
+            <form action="/submit-form" method="POST">
+                <div>
+                    <label>Name</label>
+                    <input type="textarea" placeholder="Your name" required>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <input type="textarea" placeholder="your.email@example.com" required>
+                </div>
+                <div>
+                    <label>Message</label>
+                    <textarea rows="10" cols="20" placeholder="Type a Message" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
         </section>
     </main>
 
     <footer>
-        <a href="https://github.com/bknthejane" target="_blank">GitHub</a>
-        <a href="#">LinkedIn</a>
-        <a href="#">Twitter</a>
+        <div>
+            <a href="https://github.com/bknthejane" target="_blank">GitHub</a>
+            <a href="#">LinkedIn</a>
+            <a href="#">Twitter</a>
 
-        <br>
-        <br>
-
+        </div>
         &copy 2025 Bonolo Nthejane. All rights reserved.
     </footer>
 </body>
