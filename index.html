@@ -3,54 +3,64 @@
 
 <head>
     <title>Bonolo Nthejane - Bio</title>
+    <link href="./styles.css" type="stylesheet">
 </head>
 
 <body>
     <header>
-        <h1>Bonolo Khotso Nthejane</h1>
+        <div class="container">
+            <h1 style="max-width: 1200px; margin: 0 auto; padding: 0 20px; display: flex; justify-content: space-between; align-items: cneter;">Bonolo Khotso Nthejane</h1>
 
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
+            <nav style="display: block;">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <main>
-        <img src="./MyImage.jpg" width="300" height="300">
+    <main style="max-width: 1200px; margin: 0 auto; padding: 0 20px;">
+        <section class="about" style="display: flex; ailgn-items: center; gap: 2rem; padding: 4rem 0; border-bottom: 2px dotted red;">
+            <img src="./MyImage.jpg" width="300" height="300">
 
-        <div id="about">
-            <h2>About Me</h2>
-            <p>Graduate Software Engineer with a drive to learning new things, receiving constructive critisim</p>
-        </div>
+            <div id="about">
+                <h2>About Me</h2>
+                <p>Graduate Software Engineer with a drive to learning new things, receiving constructive critisim</p>
+            </div>
+        </section>
 
-        <div id="skills">
-            <h2>Skills</h2>
-            <ul>
-                <li>C#</li>
-                <li>JavaScript</li>
-                <li>HTML</li>
-                <li>CSS</li>
-            </ul>
-        </div>
+        <section class="skills" style="padding: 4rem 0; border-bottom: 2px dotted red;">
+            <div id="skills">
+                <h2 style="color: blue;">Skills</h2>
+                <ul style="display: flex; flex-wrap: wrap; gap: 2rem;">
+                    <li>C#</li>
+                    <li>JavaScript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+            </div>
+        </section>
 
-        <div id="projects">
-            <h2>Projects</h2>
-            <h3>Personal Blog</h3>
-            <p>A responsive blog built with HTML and deployed on GitHub Pages</p>
-            <a href="#">View Project</a>
+        <section class="projects" style="padding: 4rem 0; border-bottom: 2px dotted red;">
+            <div id="projects">
+                <h2 style="color: blue;">Projects</h2>
+                <h3>Personal Blog</h3>
+                <p>A responsive blog built with HTML and deployed on GitHub Pages</p>
+                <a href="#">View Project</a>
 
-            <h3>Portfolio Site</h3>
-            <p>A personal portfolio showcasing my web development projects</p>
-            <a href="#">View Project</a>
-        </div>
-    </main>
+                <h3>Portfolio Site</h3>
+                <p>A personal portfolio showcasing my web development projects</p>
+                <a href="#">View Project</a>
+            </div>
+        </section>
 
-    <footer>
-        <div id="contact">
-            <h2>Contact Me</h2>
+        <section class="contact" style="padding: 4rem 0; border-bottom: 2px dotted red;">
+            <div id="contact">
+            <h2 style="color: blue;">Contact Me</h2>
             <label>Name</label>
             <input type="textarea" value="Your name"><br><br>
             <label>Email</label>
@@ -59,16 +69,17 @@
             <textarea rows="10" cols="20">Type a Message...</textarea><br><br>
             <input type="submit" vakue="Submit"><br>
         </div>
+        </section>
+    </main>
 
-
-
+    <footer>
         <a href="https://github.com/bknthejane" target="_blank">GitHub</a>
         <a href="#">LinkedIn</a>
         <a href="#">Twitter</a>
 
         <br>
         <br>
-            
+
         &copy 2025 Bonolo Nthejane. All rights reserved.
     </footer>
 </body>
