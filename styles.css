@@ -134,6 +134,14 @@ section:last-child {
     transform: scale(1.02);
 }
 
+.about h2:hover {
+    transform: scale(1.02);
+}
+
+.skills h2:hover {
+    transform: scale(1.02);
+}
+
 .skills ul {
     display: flex;
     gap: 1rem;
@@ -156,6 +164,10 @@ section:last-child {
     /* creates an effect of up down left right */
     transform: translateY(-3px);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.projects h2:hover {
+    transform: scale(1.02);
 }
 
 .projects div {
@@ -196,6 +208,10 @@ section:last-child {
 
 .projects a:hover {
     background-color: #2980b9;
+}
+
+.contact h2:hover {
+    transform: scale(1.02);
 }
 
 .contact form {
